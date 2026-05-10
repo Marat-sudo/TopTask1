@@ -1,6 +1,6 @@
 package com.example.top
 
-import android.graphics.Color
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
@@ -20,7 +20,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         val b: Button = findViewById(R.id.button)
-
+        val quiz: Button = findViewById(R.id.quiz)
+        val temp: Button = findViewById(R.id.temperature)
         b.setOnClickListener {
             if (b.text == "top"){
                 b.text = "RPO"
@@ -31,6 +32,18 @@ class MainActivity : AppCompatActivity() {
                 b.setBackgroundColor(getColor(R.color.purpleTop))
             }
         }
+
+        quiz.setOnClickListener {
+            val intent = Intent(this, Quiz::class.java)
+            startActivity(intent)
+        }
+
+        temp.setOnClickListener {
+            val intent = Intent(this, Temp::class.java)
+            startActivity(intent)
+        }
+
+
 
     }
 }

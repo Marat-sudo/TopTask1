@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Temp">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="123"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"/>
+
+    <EditText
+        android:id="@+id/t"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="введите температуру"
+        android:background="@color/material_dynamic_secondary90"/>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+
+
+            <RadioButton
+                android:id="@+id/b1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="F → C"/>
+
+            <RadioButton
+                android:id="@+id/b2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="C → F"/>
+
+        </RadioGroup>
+
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/done"
+
+            />
+
+    </LinearLayout>
+
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="конвертировать"
+        android:layout_marginBottom="100dp"/>
+
+
+
+
+</LinearLayout>

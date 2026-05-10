@@ -4,4 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="purpleTop">#8F00CD</color>
     <color name="RPO">#4DB6EB</color>
+    <color name="LightCoral">#F08080</color>
+    <color name="MediumAquamarine">#66CDAA</color>
+    <color name="LemonChiffon">#FFFACD</color>
 </resources>
