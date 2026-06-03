@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Top">
         <activity
+            android:name=".Social"
+            android:exported="false" />
+        <activity
+            android:name=".para2"
+            android:exported="false" />
+        <activity
             android:name=".Temp"
             android:exported="false" />
         <activity

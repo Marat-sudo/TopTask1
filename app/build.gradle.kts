@@ -19,6 +19,12 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    packagingOptions {
+        jniLibs {
+            useLegacyPackaging = true // Включает сжатие .so файлов
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -38,12 +44,20 @@ android {
 }
 
 dependencies {
+    implementation(libs.google.filament.android)
+//    implementation(libs.gltfio.android)
+    implementation(libs.filament.utils.android)
+
+    implementation(libs.androidx.recyclerview)
+    implementation(libs.androidx.cardview)
+    implementation(libs.material.v1110)
     implementation(libs.glide)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+//    implementation(libs.filament.android)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
