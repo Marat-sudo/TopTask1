@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         val quiz: Button = findViewById(R.id.quiz)
         val temp: Button = findViewById(R.id.temperature)
         val socialb: Button = findViewById(R.id.social)
+        val calb: Button = findViewById(R.id.call)
         b.setOnClickListener {
             if (b.text == "top"){
                 b.text = "RPO"
@@ -46,6 +47,11 @@ class MainActivity : AppCompatActivity() {
 
         socialb.setOnClickListener {
             val intent = Intent(this, Social::class.java)
+            startActivity(intent)
+        }
+
+        calb.setOnClickListener {
+            val intent = Intent(this, Call::class.java)
             startActivity(intent)
         }
 

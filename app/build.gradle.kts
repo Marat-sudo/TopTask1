@@ -19,10 +19,8 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    packagingOptions {
-        jniLibs {
-            useLegacyPackaging = true // Включает сжатие .so файлов
-        }
+    buildFeatures {
+        viewBinding = true
     }
 
     buildTypes {
