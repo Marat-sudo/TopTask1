@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#9ac9bf"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Top">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:backgroundTint="#485868"
+         />
+    <TextView
+        android:id="@+id/Journal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Journal"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:background="@drawable/background_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20sp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/img"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1b8094"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="загрузить фото"/>
+
+        <TextView
+            android:text="Семичаевский Марат Сергеевич"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background"
+            android:layout_width="300dp"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_height="45dp"/>
+
+        <TextView
+            android:text="+7 902 120-26-16"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_blue"
+            android:layout_width="300dp"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:drawableEnd="@drawable/galka"
+            android:layout_height="45dp"/>
+
+        <TextView
+            android:text="email@email.com"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:textSize="18dp"
+            android:background="@drawable/background_blue"
+            android:padding="10dp"
+            android:drawableEnd="@drawable/galka"
+            android:gravity="center_vertical"
+            android:layout_height="45dp"/>
+        <TextView
+            android:text="Г. Ульяновск, ул какая-то, кв нет"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background"
+            android:layout_width="300dp"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:gravity="clip_vertical"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:text="я не учился"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background"
+            android:layout_width="300dp"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_height="45dp"/>
+
+        <TextView
+            android:hint="ссылка на соц сети"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background"
+            android:layout_width="300dp"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_vertical"
+            android:layout_height="45dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

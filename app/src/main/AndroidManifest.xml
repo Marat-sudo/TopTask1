@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Top">
         <activity
+            android:name=".Top"
+            android:exported="false" />
+        <activity
             android:name=".Call"
             android:exported="false" />
         <activity

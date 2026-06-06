@@ -42,6 +42,7 @@ android {
 }
 
 dependencies {
+    implementation("de.hdodenhof:circleimageview:3.1.0")
     implementation(libs.google.filament.android)
 //    implementation(libs.gltfio.android)
     implementation(libs.filament.utils.android)
